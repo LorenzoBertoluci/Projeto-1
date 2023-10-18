@@ -16,6 +16,7 @@ header {
     padding: 16px;
     background-color: #182c61;
     color: #ecf0f2;
+    display: flex;
 }
 
 header nav li {
@@ -29,16 +30,23 @@ header nav li a {
     text-decoration: none;
 }
 
+
 .container {
-    max-width: 1200px;
+
     width: 100%; 
-	display: flex;
+    display: block;
     margin: 0 auto;
-	margin-left: 12px;
+	margin-left: 50px;
+}
+
+.Featured{
+    display: flex;
+    align-items: center;
+
 }
 
 header .container, section .container {
-    display: flex;
+
     align-items: center;
     justify-content: space-between;
 }
@@ -48,26 +56,29 @@ header .container, section .container {
 }
 
 .brands-list li {
-    display: inline;
+
     margin-right: 8px;
 	margin-left: 24px;
 }
 
 section .container {
-	display: flex;
+
 
 }
+
+
 
 section {
     padding: 24px 0;
 }
 
-section h2 {
+section h2 ,h3 {
     margin-bottom: 16px;
+    margin-left: 16px;
 }
 
 section {
-	display: grid;
+
     color: #182c61;
 }
 
@@ -76,9 +87,11 @@ section p {
 }
 
 .movie {
-    display: grid;
-
+    display: flex;
+    transition: transform 0.3s ease;
+    margin: 0  auto;
 	margin-bottom: 24px;
+    overflow: hidden;
 }
 
 .movie-poster img {
@@ -88,40 +101,50 @@ section p {
     object-fit: cover; 
 }
 
-.movie-summary {
-    flex: 2;
-	width: 450px;
-    padding-left: 16px; 
+.movi-summary{
+    flex: 1;
+    max-width: 450px;
+    height: 600px;  
+    object-fit: cover; 
 }
 
 .store-front {
     margin-right: 32px;
 }
 
-.social-links img {
-    height: 24px;
+.social-links{
+
+    margin-left: 32px;
+    margin: 0 auto;
+    text-decoration: none;
+
 }
 
-.social-links li a {
+.social-links img {
+    height: 24px;
+    display: flex;
+}
+
+.social-links-img {
     text-decoration: none;
 }
 
-.Featured {
-	display: grid;
-	justify-content: space-between;
-}
 
 .contact-methods {
     display: flex;
 	padding-right: 16px; 
     justify-content: space-between;
+
 }
+
+
 
 form input,
 form textarea,
 form button {
     width: 100%; 
     margin-bottom: 16px;
+    margin-left: 32px;
 }
 
 form textarea {
