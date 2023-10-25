@@ -71,7 +71,7 @@ section p {
     display: grid;
     align-items: center;
     overflow:scroll;
-
+    width: 1024px;
 }
 
 .movie {
